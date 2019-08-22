@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg">
+
+    <ImageView
+        android:id="@+id/todo_im"
+        android:layout_width="130dp"
+        android:layout_height="120dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.08"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.24000001"
+        app:srcCompat="@mipmap/ic_todo" />
+
+    <TextView
+        android:id="@+id/text_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="9dp"
+        android:text="@string/text_Login"
+        android:textColor="#356F19"
+        android:textSize="27sp"
+        app:layout_constraintBottom_toTopOf="@+id/EmailInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/todo_im"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.62" />
+
+    <EditText
+        android:id="@+id/EmailInput"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/EmailInput"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toTopOf="@+id/PassInput"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/todo_im"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.43"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/PassInput"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="@string/PassInput"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/todo_im"
+        app:layout_constraintTop_toBottomOf="@+id/EmailInput" />
+
+    <Button
+        android:id="@+id/button_Login"
+        android:layout_width="410dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/button_Login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/todo_im"
+        app:layout_constraintTop_toBottomOf="@+id/PassInput"
+        app:layout_constraintVertical_bias="0.13" />
+
+    <TextView
+        android:id="@+id/DoNotHave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/DoNotHave"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/button_Login"
+        app:layout_constraintStart_toStartOf="@+id/button_Login"
+        app:layout_constraintTop_toBottomOf="@+id/button_Login"
+        app:layout_constraintVertical_bias="0.19" />
+</androidx.constraintlayout.widget.ConstraintLayout>

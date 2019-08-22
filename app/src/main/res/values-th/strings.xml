@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Homework02</string>
+    <string name="text_Login">ลงชื่อเข้าสู่บัญชีของคุณ</string>
+    <string name="DoNotHave">ยังไม่มีบัญชีผู้ใช้งาน? สมัครเลย</string>
+    <string name="EmailInput">อีเมล</string>
+    <string name="PassInput">รหัสผ่าน</string>
+    <string name="button_Login">ลงชื่อเข้าใช้</string>
+</resources>
