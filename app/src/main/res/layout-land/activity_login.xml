@@ -29,20 +29,20 @@
         android:text="@string/text_Login"
         android:textColor="#356F19"
         android:textSize="27sp"
-        app:layout_constraintBottom_toTopOf="@+id/EmailInput"
+        app:layout_constraintBottom_toTopOf="@+id/email_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/todo_im"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.62" />
 
     <EditText
-        android:id="@+id/EmailInput"
+        android:id="@+id/email_edit_text"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/EmailInput"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@+id/PassInput"
+        app:layout_constraintBottom_toTopOf="@+id/password_edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/todo_im"
@@ -51,7 +51,7 @@
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/PassInput"
+        android:id="@+id/password_edit_text"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -62,10 +62,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/todo_im"
-        app:layout_constraintTop_toBottomOf="@+id/EmailInput" />
+        app:layout_constraintTop_toBottomOf="@+id/email_edit_text" />
 
     <Button
-        android:id="@+id/button_Login"
+        android:id="@+id/login_button"
         android:layout_width="410dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/todo_im"
-        app:layout_constraintTop_toBottomOf="@+id/PassInput"
+        app:layout_constraintTop_toBottomOf="@+id/password_edit_text"
         app:layout_constraintVertical_bias="0.13" />
 
     <TextView
@@ -85,8 +85,15 @@
         android:text="@string/DoNotHave"
         android:textSize="15sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/button_Login"
-        app:layout_constraintStart_toStartOf="@+id/button_Login"
-        app:layout_constraintTop_toBottomOf="@+id/button_Login"
+        app:layout_constraintEnd_toEndOf="@+id/login_button"
+        app:layout_constraintStart_toStartOf="@+id/login_button"
+        app:layout_constraintTop_toBottomOf="@+id/login_button"
         app:layout_constraintVertical_bias="0.19" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
 </androidx.constraintlayout.widget.ConstraintLayout>

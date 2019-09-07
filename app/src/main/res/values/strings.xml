@@ -5,5 +5,7 @@
     <string name="PassInput">Password</string>
     <string name="button_Login">Login</string>
     <string name="DoNotHave">Don\'t have an account? Register</string>
+    <string name="login_success">Login Success</string>
+    <string name="login_fail">Fail to Login, Incorrect Email or Password</string>
 
 </resources>

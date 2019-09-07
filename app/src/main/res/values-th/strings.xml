@@ -6,4 +6,6 @@
     <string name="EmailInput">อีเมล</string>
     <string name="PassInput">รหัสผ่าน</string>
     <string name="button_Login">ลงชื่อเข้าใช้</string>
+    <string name="login_fail">เข้าสู้ระบบล้มเหลวอีเมลหรือรหัสผ่านผิด</string>
+    <string name="login_success">เข้าสู่ระบบสำเร็จ</string>
 </resources>
